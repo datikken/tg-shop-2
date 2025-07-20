@@ -50,6 +50,9 @@ export async function POST(req: NextRequest) {
     // using the requestId to get the real transaction ID for successful payments
 
     // Create an actual invoice link by calling the Telegram Bot API
+
+    // SEE https://core.telegram.org/bots/api#payments
+
     const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/createInvoiceLink`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
