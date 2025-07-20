@@ -44,7 +44,7 @@ export default function Home() {
             const user = WebApp.initDataUnsafe.user;
             setUserId(user.id?.toString() || '');
           } else {
-            setError('No user data available from Telegram');
+            // setError('No user data available from Telegram');
             setIsLoading(false);
           }
         } else {
@@ -252,7 +252,7 @@ export default function Home() {
         />
       )}
       
-      <h1 className="text-2xl font-bold mb-6 text-center">Digital Store</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center">Сказать спасибо</h1>
       
       <ItemsList 
         items={ITEMS}

@@ -19,10 +19,10 @@ export default function PurchaseHistory({
 }: PurchaseHistoryProps) {
   return (
     <div>
-      <h2 className="text-xl font-semibold mb-4">Purchase History</h2>
+      <h2 className="text-xl font-semibold mb-4">История покупок</h2>
       {purchases.length === 0 ? (
         <p className="text-center py-4 tg-hint">
-          No purchases yet. Buy something to see it here!
+          Покупок пока нет. Купите что-нибудь и это появится здесь!
         </p>
       ) : (
         <div className="space-y-3">
